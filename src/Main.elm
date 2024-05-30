@@ -39,6 +39,8 @@ defaultPalette =
   , ("medium", "046b99")
   , ("dark", "1c304a")
   , ("black", "000000")
+  , ("extra1", "ff5733")
+  , ("extra2", "33ff57")
   ]
 
 actions : Model -> Html Message
