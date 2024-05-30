@@ -15,8 +15,11 @@ RUN npm install
 # Build the app
 RUN npm run build
 
+# Install a simple static file server
+RUN npm install -g serve
+
 # Expose the app on port 3000
 EXPOSE 3000
 
 # Command to run the app
-CMD [ "npm", "start" ]
+CMD ["serve", "-s", "dist", "-l", "3000"]
